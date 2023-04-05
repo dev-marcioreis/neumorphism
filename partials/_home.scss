@@ -112,8 +112,9 @@
             .home-image {
   
               img {
-                position: relative;
-                bottom: -1rem;
+                position: absolute;
+                bottom: 0;
+                height: 100%;
               }
   
             }
