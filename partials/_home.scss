@@ -48,6 +48,7 @@
 
           .home-image {
             position: absolute;
+            bottom: 0;
             width: 100%;
             height: 100%;
             justify-content: center;
@@ -57,7 +58,6 @@
               filter: brightness(1) contrast(1.5);
               z-index: 2;
             }
-
           }
       }
    }
@@ -107,16 +107,6 @@
                   width: 350px;
                   height: 350px;
                 }
-            }
-
-            .home-image {
-  
-              img {
-                position: absolute;
-                bottom: 0;
-                height: 100%;
-              }
-  
             }
         }
      }
