@@ -1,0 +1,227 @@
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition;
+    z-index: 999;
+
+    &.scrolling {
+        box-shadow: $shadow;
+        background: $bg-color;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .container {
+
+        .navbar {
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+
+            .nav-logo {
+
+                a {
+
+                    .logo-name {
+                        font-weight: 300;
+                        letter-spacing: 2px;
+                        padding: .5rem;
+                        box-shadow: $shadow1;
+                        color: $color-dark;
+                        text-transform: capitalize;
+                        transition: $transition;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+
+            .nav-links {
+                align-items: center;
+                gap: 2rem;
+
+                .nav-item {
+                    position: relative;
+                    
+                    li {
+                        text-transform: capitalize;
+
+                        a {
+                            font-weight: 300;
+                            letter-spacing: 4px;
+                            color: $color-dark;
+                            text-transform: capitalize;
+                        }
+                    }
+
+                    .active-nav {
+                        position: absolute;
+                        left: 0;
+                        bottom: -10px;
+                        width: 100%;
+                        height: 3px;
+                        box-shadow: $shadow1;
+                    }
+                }
+            }
+
+            .btn {
+                transition: $transition;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+
+            .toggle-btn {
+                display: none;
+            }
+        }
+    }
+}
+
+
+/*==========Media Query big screens==========*/
+@media (min-width: 1600px) {
+    .header {
+    
+        .container {
+    
+            .navbar {
+    
+                .nav-logo {
+
+                    a {
+    
+                        .logo-name {
+                            text-transform: uppercase;
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+    
+                .nav-links {
+                    gap: 5rem;
+    
+                    .nav-item {
+                        
+                        li {
+    
+                            a {
+                                font-size: 1.5rem;
+                                text-transform: uppercase;
+                                letter-spacing: 7px;
+                            }
+                        }
+                    }
+                }
+    
+                .btn {
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+}
+
+
+/*==========Media Query small screens==========*/
+@media (max-width: 1024px) {
+    .header {
+    
+        .container {
+            padding: 0 .5rem;
+    
+            .navbar {
+                position: relative;
+                padding: .5rem 0;
+
+                .nav-logo {
+
+                    a {
+    
+                        .logo-name {
+                            text-transform: lowercase;
+    
+                            &:hover {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+    
+                .nav-links {
+                    position: absolute;
+                    top: -500%;
+                    right: 0;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    width: 21.6rem;
+                    padding: 2rem 1rem;
+                    border-radius: .5rem;
+                    padding: 2rem 1rem;
+                    border: 2px solid transparent;
+                    background: $gradiente;
+                    box-shadow: $shadow1;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: $transition;
+
+                    &.active {
+                        top: 4.5rem;
+                        visibility: visible;
+                        opacity: 1;
+                    }
+    
+                    .nav-item {
+                        
+                        li {
+                            position: relative;
+    
+                            a {
+                                color: $color-dark;
+                                letter-spacing: 2px;
+                                text-transform: lowercase;
+                            }
+                        }
+                    }
+
+                    .active-nav {
+                        display: none;
+                    }
+                }
+    
+                .btn {
+                    display: none;
+                }
+    
+                .toggle-btn {
+                    display: block;
+                    padding: .2rem;
+                    background: $gradiente;
+                    box-shadow: $shadow1;
+                    
+                    .open-btn, .close-btn {
+                        font-size: 2rem;
+                        color: $color-dark;
+                        cursor: pointer;
+                    }
+
+                    .close-btn {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+}
+

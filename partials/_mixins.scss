@@ -1,0 +1,18 @@
+@mixin button ($textColor: $color-dark, $backgroundColor: $gradiente) {
+    position: relative;
+    font-size: .9rem;
+    font-weight: 300;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    padding: .5rem;
+    background: $backgroundColor;
+    color: $textColor;
+    border: 2px solid $transparent-color;
+    box-shadow: $shadow1;
+    cursor: pointer;
+}
+
+@mixin  bg-color {
+    background: $bg-color;
+    color: $color-dark;
+}

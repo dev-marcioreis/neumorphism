@@ -1,0 +1,47 @@
+/*==========Google Fonts==========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*==========Reset==========*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*==========Root==========*/
+$color-dark: hsl(0, 0%, 13%);
+$color-light: hsl(0, 0%, 100%);
+$transparent-color: hsla(0, 0%, 0%, 0);
+$bg-color: hsl(228, 14%, 93%);
+$border-color: hsl(0, 0%, 98%);
+$primary-color: hsl(228, 73%, 55%);
+
+$gradiente: linear-gradient(160deg, hsl(225, 15%, 95%) 0%, hsl(223, 15%, 91%) 100%);
+
+$transition: all 400ms ease-in-out;
+
+$shadow: 0 1px 4px hsla(0, 0%, 0%, 0.2);
+
+$shadow1: -3px -3px 6px 2px hsl(0, 0%, 100%), 5px 5px 8px 0px hsla(0, 0%, 0%, 0.17), 1px 2px 2px 0px hsla(0, 0%, 0%, 0.1);
+
+$shadow2: inset -3px -3px 5px 0px hsl(0, 0%, 100%), -1px -1px 4px 0px hsl(0, 0%, 100%), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.12), inset 2px 2px 3px 0px rgba(0, 0, 0, 0.07), 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+
+$shadow3: inset 0 0 20px $color-dark;
+
+
+
+
+
+
+
+
+
+
+
+
+

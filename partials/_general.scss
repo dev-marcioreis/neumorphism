@@ -1,0 +1,85 @@
+/*==========Base==========*/
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+body {
+   @include bg-color;
+   height: 300rem;
+
+    &::-webkit-scrollbar {
+        width: 0;
+      }
+}
+.section {
+    padding-top: 3rem;
+}
+.container {
+    padding: 0 3rem;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, h4, h5 {
+    font-size: 1.3rem;
+}
+p, a, span, small, sub, sup {
+    font-size: 1rem;
+}
+
+/*==========Btn's==========*/
+.btn {
+    @include button;
+}
+.morph {
+    border: 2px solid $transparent-color;
+    background: $gradiente;
+    box-shadow: $shadow1;
+}
+
+
+
+
+/*==========Media Query==========*/
+@media (min-width: 1600px) {
+    html {
+        scroll-padding-top: 2rem;
+    }
+    .container {
+        padding: 0 2rem;
+    }
+    h1, h2, h3, h4 {
+        font-size: 1.5rem;
+    }
+    p, a, span, small, sub, sup {
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+/*==========Media Query==========*/
+@media (max-width: 1024px) {
+    html {
+        scroll-padding-top: 4rem;
+    }
+    .container {
+        padding: 0 1rem;
+    }
+    h1, h2, h3, h4 {
+        font-size: 1.1rem;
+    }
+    p, a, span, small, sub, sup {
+        font-size: .9rem;
+    }
+    
+}
+  

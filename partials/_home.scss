@@ -1,0 +1,115 @@
+.home {
+  background: $color-dark;
+  height: 100vh;
+
+  .container {
+
+      .hero {
+        background-image: url(../assets/stars.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+          .earth {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            margin-block-start: -9rem;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: $color-dark;
+
+              .globe {
+                width: 500px;
+                height: 500px;
+                box-shadow: $shadow3;
+                border-radius: 50%;
+                background: url("../assets/earth.png");
+                filter: contrast(2.5) brightness(1.5);
+                mix-blend-mode: hard-light;
+                background-size: cover;
+                animation: globe 15s linear infinite;
+              }
+
+              @keyframes globe {
+                  0% {
+                    background-position: 0;
+                  }
+                  100% {
+                    background-position: 250%;
+                  }
+              }
+          }
+
+          .home-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+
+            img {
+              object-fit: cover;
+              filter: brightness(1) contrast(1.5);
+              z-index: 2;
+            }
+
+          }
+      }
+   }
+}
+
+
+
+/*==========Media Query big screens==========*/
+@media (min-width: 1600px) {
+  .home {
+  
+    .container {
+  
+        .hero {
+  
+            .earth {
+              width: 700px;
+              height: 700px;
+  
+                .globe {
+                  width: 700px;
+                  height: 700px;
+                }
+            }
+        }
+     }
+  }
+  
+}
+
+
+
+/*==========Media Query small screens mobile==========*/
+@media (max-width: 768px) {
+  .home {
+  
+    .container {
+  
+        .hero {
+  
+            .earth {
+              margin-block-start: -17rem;
+              width: 350px;
+              height: 350px;
+  
+                .globe {
+                  width: 350px;
+                  height: 350px;
+                }
+            }
+        }
+     }
+  }
+
+}
