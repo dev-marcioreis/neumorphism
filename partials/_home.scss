@@ -68,7 +68,6 @@
 /*==========Media Query big screens==========*/
 @media (min-width: 1600px) {
   .home {
-    height: auto;
   
     .container {
   
@@ -108,6 +107,15 @@
                   width: 350px;
                   height: 350px;
                 }
+            }
+
+            .home-image {
+  
+              img {
+                position: relative;
+                bottom: 0;
+              }
+  
             }
         }
      }
