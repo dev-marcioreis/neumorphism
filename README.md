@@ -6,7 +6,7 @@ Este projeto será uma página com a técnica de neumorfismo.
 
 ## 🚀 Em desenvolvimento...
 
-## 📋 Técnologias
+## 📋 Tecnologias
 SASS
 
 ## ✒️ Autor
